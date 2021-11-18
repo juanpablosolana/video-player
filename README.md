@@ -1,6 +1,4 @@
-# Título del Proyecto
-
-_Video Player_
+# Video Player
 
 ## Comenzando 🚀
 
