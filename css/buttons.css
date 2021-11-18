@@ -1,0 +1,27 @@
+.button {
+  inline-size: 32px;
+  block-size: 32px;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.button:active{
+transform: scale(.9);
+}
+
+#pause {
+  background-image: url(../icons/icons8-pause_button\ 1.svg);
+}
+
+#play {
+  background-image: url(../icons/icons8-circled_play\ 1.svg);
+}
+
+#backward {
+  background-image: url(../icons/icons8-reset\ 2.svg);
+}
+
+#forward {
+  background-image: url(../icons/icons8-reset\ 1.svg);
+}

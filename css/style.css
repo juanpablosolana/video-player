@@ -1,0 +1,18 @@
+@import './buttons.css';
+@import './player.css';
+
+:root {
+  --Primary: #43DDE6;
+  --White: #ffffff;
+}
+
+body {
+  color: var(--White);
+  background-color: var(--Primary);
+}
+
+.wrapper {
+  max-inline-size: 900px;
+  margin: auto;
+}
+

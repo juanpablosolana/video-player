@@ -1,0 +1,13 @@
+const $video = document.querySelector('#video');
+const $play = document.querySelector('#play');
+const $pause = document.querySelector('#pause');
+const $backward = document.querySelector('#backward');
+const $forward = document.querySelector('#forward');
+const $progress = document.querySelector('#progress');
+$play.addEventListener('click', _=> {$video.play(), $play.hidden=true, $pause.hidden=false});
+$pause.addEventListener('click', _=> {$video.pause(),$play.hidden=false, $pause.hidden=true} );
+$backward.addEventListener('click', _=> {$video.currentTime -= 5} );
+$forward.addEventListener('click', _=> {$video.currentTime += 5} );
+$video.addEventListener('loadedmetadata', _=> {$progress.max = $video.duration});
+$video.addEventListener('timeupdate', _=> {$progress.value = $video.currentTime});
+$progress.addEventListener('change', _=> {$video.currentTime = $progress.value});
